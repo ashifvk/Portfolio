@@ -516,7 +516,7 @@
                             <div class="col-lg-6 offset-lg-1 valign">
                                 <div class="full-width">
                                     <form id="contact-form-new" method="post" >
-
+                                        {% csrf_token %}
                                         <div class="messages"></div>
 
                                         <div class="controls row">
@@ -582,16 +582,21 @@
                         message: $('#message').val(),
                         phone: $('#phone').val(),
                     };
+                    var csrfToken = $('input[name="csrfmiddlewaretoken"]').val();
         
                     // AJAX POST request
                     $.ajax({
                         type: 'POST',
                         url: '{% url "contact" %}',  
                         data: JSON.stringify(formData),  
+                        headers: {
+                            'X-CSRFToken': csrfToken 
+                        },
                         contentType: 'application/json',  
                         success: function(response) {
-                            console.log('Success:', response);  
-                            alert('Form submitted successfully!');
+                            console.log( response.status);  
+                           
+
                         },
                         error: function(xhr, status, error) {
                             console.error('Error:', error);  
