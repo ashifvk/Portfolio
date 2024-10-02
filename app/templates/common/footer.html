@@ -1,4 +1,159 @@
 {% load static %}
+
+        <style>
+            .msg-div{
+                padding: 10px;
+                margin-top: 10px;
+                margin-left: 10px;
+                margin-right: 10px;
+                border: 1px solid;
+                border-radius: 8px;
+                display: none;
+            }
+        </style>
+
+                <!-- ==================== Start Contact ==================== -->
+
+                <section class="contact-crev section-padding" data-scroll-index="7">
+                    <div class="contact-container">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <div class="sec-lg-head md-mb80">
+                                        <h6 class="dot-titl-non mb-10 wow fadeIn">Get In Touch</h6>
+                                        <h2 class="fz-50 d-rotate wow">
+                                            <span class="rotate-text">Let's make your brand brilliant!</span>
+                                        </h2>
+                                        <p class="fz-15 mt-10 wow fadeIn">If you would like to work with us or just want to get in
+                                            touch, we’d love to hear from you!</p>
+                                            <!-- <div class="phone fz-30 fw-600 mt-30 underline wow fadeIn">
+                                                <a href="#0">+1 840 841 25 69</a>
+                                            </div> -->
+                                        <ul class="rest social-text d-flex mt-60">
+                                            <li class="mr-30">
+                                                <a href="https://github.com/ashifvk" class="hover-this"target="_blank" ><span class="hover-anim">Github</span></a>
+                                            </li>
+                                            <li class="mr-30">
+                                                <a href="https://www.facebook.com/ashif.vk.75" class="hover-this" target="_blank"><span class="hover-anim">Facebook</span></a>
+                                            </li>
+                                            <li class="mr-30">
+                                                <a href="https://www.linkedin.com/in/ashif-vk-921260177/" class="hover-this" target="_blank"><span class="hover-anim">LinkedIn</span></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.instagram.com/az1fe/" class="hover-this" target="_blank"><span
+                                                        class="hover-anim">Instagram</span></a>
+                                            </li>
+                                        </ul>
+                                        <div id="success-div" class=" msg-div">
+                                            Thank you for contacting us we will get back to you shortly!
+                                        </div>
+                                        <div id="error-div" class=" msg-div">
+                                          Something went wrong. Please try again
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 offset-lg-1 valign">
+                                    <div class="full-width">
+                                        <form id="contact-form-new" method="post" >
+                                            {% csrf_token %}
+                                            <div class="messages"></div>
+    
+                                            <div class="controls row">
+    
+                                                <div class="col-lg-6">
+                                                    <div class="form-group mb-30">
+                                                        <input id="name" type="text" name="name" placeholder="Name"
+                                                            required="required">
+                                                    </div>
+                                                </div>
+    
+                                                <div class="col-lg-6">
+                                                    <div class="form-group mb-30">
+                                                        <input id="email" type="email" name="email" placeholder="Email"
+                                                            required="required">
+                                                    </div>
+                                                </div>
+    
+                                                <div class="col-12">
+                                                    <div class="form-group mb-30">
+                                                        <input id="phone" type="number" name="subject"
+                                                            placeholder="Phone" required>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="col-12">
+                                                    <div class="form-group">
+                                                        <textarea id="message" name="message" placeholder="Message"
+                                                            rows="4" required="required"></textarea>
+                                                    </div>
+                                                    <div class="mt-30">
+                                                        <button type="submit" class="butn butn-full butn-bord radius-30">
+                                                            <span class="text">Let's Talk</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+    
+                <!-- ==================== End Contact ==================== -->
+    
+    
+                </main>
+                <script>
+                    // jQuery form submit event
+                    $('#contact-form-new').submit(function(event) {
+                        event.preventDefault(); 
+                        console.log('enter')
+                        if (!this.checkValidity()) {
+                            this.reportValidity();
+                        }
+                        
+                        // Prepare form data
+                        var formData = {
+                            name: $('#name').val(),
+                            email: $('#email').val(),
+                            message: $('#message').val(),
+                            phone: $('#phone').val(),
+                        };
+                        var csrfToken = $('input[name="csrfmiddlewaretoken"]').val();
+            
+                        // AJAX POST request
+                        $.ajax({
+                            type: 'POST',
+                            url: '{% url "contact" %}',  
+                            data: JSON.stringify(formData),  
+                            headers: {
+                                'X-CSRFToken': csrfToken 
+                            },
+                            contentType: 'application/json',  
+                            success: function(response) {
+                                console.log( response.status);  
+                               if(response.status==1){
+                                $('#contact-form-new')[0].reset();
+                                $('#success-div').show();
+                                $('#error-div').hide();
+                               }
+                               else{
+                                $('#error-div').show();
+                                $('#success-div').hide();
+                               }
+    
+                            },
+                            error: function(xhr, status, error) {
+                                console.error('Error:', error);  
+                                alert('Form submission failed!');
+                            }
+                        });
+                    });
+                </script>
+                
+
             <!-- ==================== Start Footer ==================== -->
 
             <footer class="sub-bg">

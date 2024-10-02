@@ -1,175 +1,23 @@
-<!DOCTYPE html>
-<html lang="zxx">
+{% load static %}
+{% include "common/header.html" %}
 
-<head>
+<div id="smooth-content">
+            <!-- ==================== Start Slider ==================== -->
 
-    <!-- Metas -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="keywords" content="HTML5 Template Geekfolio Multi-Purpose themeforest">
-    <meta name="description" content="Geekfolio - Multi-Purpose HTML5 Template">
-    <meta name="author" content="">
-
-    <!-- Title  -->
-    <title>Sajin</title>
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/imgs/favicon.ico">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
-        rel="stylesheet">
-
-    <!-- Plugins -->
-    <link rel="stylesheet" href="assets/css/plugins.css">
-
-    <!-- Core Style Css -->
-    <link rel="stylesheet" href="assets/css/style.css">
-
-
-</head>
-
-<body class="main-bg">
-
-
-
-    <!-- ==================== Start Loading ==================== -->
-
-    <div class="loader-wrap">
-        <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
-            <path id="svg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
-        </svg>
-
-        <div class="loader-wrap-heading">
-            <div class="load-text">
-                <span>L</span>
-                <span>o</span>
-                <span>a</span>
-                <span>d</span>
-                <span>i</span>
-                <span>n</span>
-                <span>g</span>
-            </div>
-        </div>
-    </div>
-
-    <!-- ==================== End Loading ==================== -->
-
-
-    <div class="cursor"></div>
-
-
-    <!-- ==================== Start progress-scroll-button ==================== -->
-
-    <div class="progress-wrap cursor-pointer">
-        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-        </svg>
-    </div>
-
-    <!-- ==================== End progress-scroll-button ==================== -->
-
-
-
-    <!-- ==================== Start Navbar ==================== -->
-
-    <nav class="navbar navbar-expand-lg main-bg">
-        <div class="container">
-
-            <!-- Logo -->
-            <a class="logo icon-img-100" href="#">
-                <img src="assets/imgs/freelancer/SAJIN.jpg" alt="logo">
-            </a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="icon-bar"><i class="fas fa-bars"></i></span>
-            </button>
-
-            <!-- navbar links -->
-            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html"><span class="rolling-text">Home</span></a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#0" data-scroll-nav="1"><span
-                                class="rolling-text">Services</span></a>
-                    </li> -->
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#0" data-scroll-nav="2"><span
-                                class="rolling-text">About</span></a>
-                    </li> -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="work.html"><span
-                                class="rolling-text">Portfolio</span></a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#0" data-scroll-nav="4"><span
-                                class="rolling-text">Social</span></a>
-                    </li> -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                            aria-haspopup="true" aria-expanded="false"><span class="rolling-text">Social</span></a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Behance</a>
-                            <a class="dropdown-item" href="#">Dribbble</a>
-                            <a class="dropdown-item" href="#">LinkedIn</a>
-                            <a class="dropdown-item" href="#">Instagram</a>
-                        </div>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#0" data-scroll-nav="6"><span class="rolling-text">Blog</span></a>
-                    </li> -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#0"><span
-                                class="rolling-text">Contact</span></a>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- <div class="search-form">
-                <div class="form-group">
-                    <input type="text" name="search" placeholder="Search">
-                    <button><span class="pe-7s-search"></span></button>
-                </div>
-                <div class="search-icon">
-                    <span class="pe-7s-search open-search"></span>
-                    <span class="pe-7s-close close-search"></span>
-                </div>
-            </div> -->
-        </div>
-    </nav>
-
-    <!-- ==================== End Navbar ==================== -->
-
-    <main>
-
-        <!-- ==================== Start Slider ==================== -->
-
-        <header class="work-header section-padding pb-0">
-            <div class="container mt-80">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="caption">
-                            <h6 class="sub-title">PORTFOLIO</h6>
-                            <h1>MY WORKS</h1>
+            <header class="work-header section-padding pb-0">
+                <div class="container mt-80">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="caption">
+                                <h6 class="sub-title">PORTFOLIO</h6>
+                                <h1>MY WORKS</h1>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </header>
+            </header>
 
-        <!-- ==================== End Slider ==================== -->
-
-
+            <!-- ==================== End Slider ==================== -->
 
         <!-- ==================== Start Portfolio ==================== -->
 
@@ -178,312 +26,44 @@
 
                 <div class="row">
                     <!-- filter links -->
-                    <div class="filtering col-12 mb-80 text-center">
+                    {% comment %} <div class="filtering col-12 mb-80 text-center">
                         <div class="filter">
                             <span data-filter='*' class='active' data-count="08">All</span>
                             <span data-filter='.brand' data-count="03">App</span>
                             <span data-filter='.app' data-count="02">Web</span>
                             <span data-filter='.web' data-count="03">Creative</span>
                         </div>
-                    </div>
+                    </div> {% endcomment %}
                 </div>
 
                 <div class="gallery">
                     <div class="row grid max-margin">
 
+                        {% for work in works %}
                         <div class="col-md-4 items app info-overlay mb-40">
                             <div class="item-img o-hidden">
                                 <a href="#" class="imago wow">
                                     <div class="inner wow">
-                                        <img src="assets/imgs/freelancer/works/stether.jpg" alt="image">
+                                        <img src="{{work.image.url}}" alt="image">
                                     </div>
                                 </a>
                                 <div class="info">
                                     <div class="d-flex align-items-center gap-1">
-                                    <h5><a href="https://www.stether.ai/">Stether</a></h5>
+                                    <h5><a href="{{work.url}}">{{work.title}}</a></h5>
                                     <span class="mb-10">
                                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M13.922 4.5V11.8125C13.922 11.9244 13.8776 12.0317 13.7985 12.1108C13.7193 12.1899 13.612 12.2344 13.5002 12.2344C13.3883 12.2344 13.281 12.1899 13.2018 12.1108C13.1227 12.0317 13.0783 11.9244 13.0783 11.8125V5.51953L4.79547 13.7953C4.71715 13.8736 4.61092 13.9176 4.50015 13.9176C4.38939 13.9176 4.28316 13.8736 4.20484 13.7953C4.12652 13.717 4.08252 13.6108 4.08252 13.5C4.08252 13.3892 4.12652 13.283 4.20484 13.2047L12.4806 4.92188H6.18765C6.07577 4.92188 5.96846 4.87743 5.88934 4.79831C5.81023 4.71919 5.76578 4.61189 5.76578 4.5C5.76578 4.38811 5.81023 4.28081 5.88934 4.20169C5.96846 4.12257 6.07577 4.07813 6.18765 4.07812H13.5002C13.612 4.07813 13.7193 4.12257 13.7985 4.20169C13.8776 4.28081 13.922 4.38811 13.922 4.5Z" fill="currentColor"></path>
                                         </svg>
                                     </span>
                                 </div>
-                                    <h6 class="sub-title tag"><a href="https://www.stether.ai/">AI</a></h6>
+                                    <h6 class="sub-title tag"><a href="{{work.url}}">{{work.Category}}</a></h6>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-md-4 items app brand info-overlay mb-40">
-                            <div class="item-img o-hidden">
-                                <a href="https://doob-test-1.vercel.app/" class="imago wow">
-                                    <div class="inner wow">
-                                        <img src="assets/imgs/freelancer/works/doob.jpg" alt="image">
-                                    </div>
-                                </a>
-                                <div class="info">
-                                    <div class="d-flex align-items-center gap-1">
-                                    <h5><a href="https://doob-test-1.vercel.app/">Doob</a></h5>
-                                    <span class="mb-10">
-                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M13.922 4.5V11.8125C13.922 11.9244 13.8776 12.0317 13.7985 12.1108C13.7193 12.1899 13.612 12.2344 13.5002 12.2344C13.3883 12.2344 13.281 12.1899 13.2018 12.1108C13.1227 12.0317 13.0783 11.9244 13.0783 11.8125V5.51953L4.79547 13.7953C4.71715 13.8736 4.61092 13.9176 4.50015 13.9176C4.38939 13.9176 4.28316 13.8736 4.20484 13.7953C4.12652 13.717 4.08252 13.6108 4.08252 13.5C4.08252 13.3892 4.12652 13.283 4.20484 13.2047L12.4806 4.92188H6.18765C6.07577 4.92188 5.96846 4.87743 5.88934 4.79831C5.81023 4.71919 5.76578 4.61189 5.76578 4.5C5.76578 4.38811 5.81023 4.28081 5.88934 4.20169C5.96846 4.12257 6.07577 4.07813 6.18765 4.07812H13.5002C13.612 4.07813 13.7193 4.12257 13.7985 4.20169C13.8776 4.28081 13.922 4.38811 13.922 4.5Z" fill="currentColor"></path>
-                                        </svg>
-                                    </span>
-                                </div>
-                                    <h6 class="sub-title tag"><a href="https://doob-test-1.vercel.app/">Sports, Ecommerce</a></h6>
-                                </div>
-                            </div>
-                        </div>
+                        {% endfor %}
 
-                        <div class="col-md-4 items app info-overlay mb-40">
-                            <div class="item-img o-hidden">
-                                <a href="https://berenting.ca/" class="imago wow">
-                                    <div class="inner wow">
-                                        <img src="assets/imgs/freelancer/works/berenting.jpg" alt="image">
-                                    </div>
-                                </a>
-                                <div class="info">
-                                    <div class="d-flex align-items-center gap-1">
-                                    <h5><a href="https://berenting.ca/">Berenting</a></h5>
-                                    <span class="mb-10">
-                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M13.922 4.5V11.8125C13.922 11.9244 13.8776 12.0317 13.7985 12.1108C13.7193 12.1899 13.612 12.2344 13.5002 12.2344C13.3883 12.2344 13.281 12.1899 13.2018 12.1108C13.1227 12.0317 13.0783 11.9244 13.0783 11.8125V5.51953L4.79547 13.7953C4.71715 13.8736 4.61092 13.9176 4.50015 13.9176C4.38939 13.9176 4.28316 13.8736 4.20484 13.7953C4.12652 13.717 4.08252 13.6108 4.08252 13.5C4.08252 13.3892 4.12652 13.283 4.20484 13.2047L12.4806 4.92188H6.18765C6.07577 4.92188 5.96846 4.87743 5.88934 4.79831C5.81023 4.71919 5.76578 4.61189 5.76578 4.5C5.76578 4.38811 5.81023 4.28081 5.88934 4.20169C5.96846 4.12257 6.07577 4.07813 6.18765 4.07812H13.5002C13.612 4.07813 13.7193 4.12257 13.7985 4.20169C13.8776 4.28081 13.922 4.38811 13.922 4.5Z" fill="currentColor"></path>
-                                        </svg>
-                                    </span>
-                                </div>
-                                    <h6 class="sub-title tag"><a href="https://berenting.ca/">Real-Estate</a></h6>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 items app info-overlay mb-40">
-                            <div class="item-img o-hidden">
-                                <a href="https://eizie.ai/" class="imago wow">
-                                    <div class="inner wow">
-                                        <img src="assets/imgs/freelancer/works/eizie.io.jpg" alt="image">
-                                    </div>
-                                </a>
-                                <div class="info">
-                                    <div class="d-flex align-items-center gap-1">
-                                    <h5><a href="https://eizie.ai/">Eizie AI</a></h5>
-                                    <span class="mb-10">
-                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M13.922 4.5V11.8125C13.922 11.9244 13.8776 12.0317 13.7985 12.1108C13.7193 12.1899 13.612 12.2344 13.5002 12.2344C13.3883 12.2344 13.281 12.1899 13.2018 12.1108C13.1227 12.0317 13.0783 11.9244 13.0783 11.8125V5.51953L4.79547 13.7953C4.71715 13.8736 4.61092 13.9176 4.50015 13.9176C4.38939 13.9176 4.28316 13.8736 4.20484 13.7953C4.12652 13.717 4.08252 13.6108 4.08252 13.5C4.08252 13.3892 4.12652 13.283 4.20484 13.2047L12.4806 4.92188H6.18765C6.07577 4.92188 5.96846 4.87743 5.88934 4.79831C5.81023 4.71919 5.76578 4.61189 5.76578 4.5C5.76578 4.38811 5.81023 4.28081 5.88934 4.20169C5.96846 4.12257 6.07577 4.07813 6.18765 4.07812H13.5002C13.612 4.07813 13.7193 4.12257 13.7985 4.20169C13.8776 4.28081 13.922 4.38811 13.922 4.5Z" fill="currentColor"></path>
-                                        </svg>
-                                    </span>
-                                </div>
-                                    <h6 class="sub-title tag"><a href="https://eizie.ai/">AI Tool</a></h6>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 items app info-overlay mb-40">
-                            <div class="item-img o-hidden">
-                                <a href="#" class="imago wow">
-                                    <div class="inner wow">
-                                        <img src="assets/imgs/freelancer/works/liyak.jpg" alt="image">
-                                    </div>
-                                </a>
-                                <div class="info">
-                                    <div class="d-flex align-items-center gap-1">
-                                    <h5><a href="#">Liyak</a></h5>
-                                    <span class="mb-10">
-                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M13.922 4.5V11.8125C13.922 11.9244 13.8776 12.0317 13.7985 12.1108C13.7193 12.1899 13.612 12.2344 13.5002 12.2344C13.3883 12.2344 13.281 12.1899 13.2018 12.1108C13.1227 12.0317 13.0783 11.9244 13.0783 11.8125V5.51953L4.79547 13.7953C4.71715 13.8736 4.61092 13.9176 4.50015 13.9176C4.38939 13.9176 4.28316 13.8736 4.20484 13.7953C4.12652 13.717 4.08252 13.6108 4.08252 13.5C4.08252 13.3892 4.12652 13.283 4.20484 13.2047L12.4806 4.92188H6.18765C6.07577 4.92188 5.96846 4.87743 5.88934 4.79831C5.81023 4.71919 5.76578 4.61189 5.76578 4.5C5.76578 4.38811 5.81023 4.28081 5.88934 4.20169C5.96846 4.12257 6.07577 4.07813 6.18765 4.07812H13.5002C13.612 4.07813 13.7193 4.12257 13.7985 4.20169C13.8776 4.28081 13.922 4.38811 13.922 4.5Z" fill="currentColor"></path>
-                                        </svg>
-                                    </span>
-                                </div>
-                                    <h6 class="sub-title tag"><a href="#">Ecommerce</a></h6>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 items app info-overlay mb-40">
-                            <div class="item-img o-hidden">
-                                <a href="https://eizie.com/" class="imago wow">
-                                    <div class="inner wow">
-                                        <img src="assets/imgs/freelancer/works/eizie.jpg" alt="image">
-                                    </div>
-                                </a>
-                                <div class="info">
-                                    <div class="d-flex align-items-center gap-1">
-                                    <h5><a href="https://eizie.com/">Eizie</a></h5>
-                                    <span class="mb-10">
-                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M13.922 4.5V11.8125C13.922 11.9244 13.8776 12.0317 13.7985 12.1108C13.7193 12.1899 13.612 12.2344 13.5002 12.2344C13.3883 12.2344 13.281 12.1899 13.2018 12.1108C13.1227 12.0317 13.0783 11.9244 13.0783 11.8125V5.51953L4.79547 13.7953C4.71715 13.8736 4.61092 13.9176 4.50015 13.9176C4.38939 13.9176 4.28316 13.8736 4.20484 13.7953C4.12652 13.717 4.08252 13.6108 4.08252 13.5C4.08252 13.3892 4.12652 13.283 4.20484 13.2047L12.4806 4.92188H6.18765C6.07577 4.92188 5.96846 4.87743 5.88934 4.79831C5.81023 4.71919 5.76578 4.61189 5.76578 4.5C5.76578 4.38811 5.81023 4.28081 5.88934 4.20169C5.96846 4.12257 6.07577 4.07813 6.18765 4.07812H13.5002C13.612 4.07813 13.7193 4.12257 13.7985 4.20169C13.8776 4.28081 13.922 4.38811 13.922 4.5Z" fill="currentColor"></path>
-                                        </svg>
-                                    </span>
-                                </div>
-                                    <h6 class="sub-title tag"><a href="https://eizie.com/">Software Solution</a></h6>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 items app info-overlay mb-40">
-                            <div class="item-img o-hidden">
-                                <a href="https://dnbweb.9pc.in/" class="imago wow">
-                                    <div class="inner wow">
-                                        <img src="assets/imgs/freelancer/works/Aster.jpg" alt="image">
-                                    </div>
-                                </a>
-                                <div class="info">
-                                    <div class="d-flex align-items-center gap-1">
-                                    <h5><a href="https://dnbweb.9pc.in/">Aster DNB</a></h5>
-                                    <span class="mb-10">
-                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M13.922 4.5V11.8125C13.922 11.9244 13.8776 12.0317 13.7985 12.1108C13.7193 12.1899 13.612 12.2344 13.5002 12.2344C13.3883 12.2344 13.281 12.1899 13.2018 12.1108C13.1227 12.0317 13.0783 11.9244 13.0783 11.8125V5.51953L4.79547 13.7953C4.71715 13.8736 4.61092 13.9176 4.50015 13.9176C4.38939 13.9176 4.28316 13.8736 4.20484 13.7953C4.12652 13.717 4.08252 13.6108 4.08252 13.5C4.08252 13.3892 4.12652 13.283 4.20484 13.2047L12.4806 4.92188H6.18765C6.07577 4.92188 5.96846 4.87743 5.88934 4.79831C5.81023 4.71919 5.76578 4.61189 5.76578 4.5C5.76578 4.38811 5.81023 4.28081 5.88934 4.20169C5.96846 4.12257 6.07577 4.07813 6.18765 4.07812H13.5002C13.612 4.07813 13.7193 4.12257 13.7985 4.20169C13.8776 4.28081 13.922 4.38811 13.922 4.5Z" fill="currentColor"></path>
-                                        </svg>
-                                    </span>
-                                </div>
-                                    <h6 class="sub-title tag"><a href="https://dnbweb.9pc.in/">Aster Mims Education</a></h6>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 items app info-overlay mb-40">
-                            <div class="item-img o-hidden">
-                                <a href="https://legerointernational.com/" class="imago wow">
-                                    <div class="inner wow">
-                                        <img src="assets/imgs/freelancer/works/legero.jpg" alt="image">
-                                    </div>
-                                </a>
-                                <div class="info">
-                                    <div class="d-flex align-items-center gap-1">
-                                    <h5><a href="https://legerointernational.com/">Legero</a></h5>
-                                    <span class="mb-10">
-                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M13.922 4.5V11.8125C13.922 11.9244 13.8776 12.0317 13.7985 12.1108C13.7193 12.1899 13.612 12.2344 13.5002 12.2344C13.3883 12.2344 13.281 12.1899 13.2018 12.1108C13.1227 12.0317 13.0783 11.9244 13.0783 11.8125V5.51953L4.79547 13.7953C4.71715 13.8736 4.61092 13.9176 4.50015 13.9176C4.38939 13.9176 4.28316 13.8736 4.20484 13.7953C4.12652 13.717 4.08252 13.6108 4.08252 13.5C4.08252 13.3892 4.12652 13.283 4.20484 13.2047L12.4806 4.92188H6.18765C6.07577 4.92188 5.96846 4.87743 5.88934 4.79831C5.81023 4.71919 5.76578 4.61189 5.76578 4.5C5.76578 4.38811 5.81023 4.28081 5.88934 4.20169C5.96846 4.12257 6.07577 4.07813 6.18765 4.07812H13.5002C13.612 4.07813 13.7193 4.12257 13.7985 4.20169C13.8776 4.28081 13.922 4.38811 13.922 4.5Z" fill="currentColor"></path>
-                                        </svg>
-                                    </span>
-                                </div>
-                                    <h6 class="sub-title tag"><a href="https://legerointernational.com/">Product</a></h6>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-md-4 items app info-overlay mb-40">
-                            <div class="item-img o-hidden">
-                                <a href="https://startrightconsulting.ca/" class="imago wow">
-                                    <div class="inner wow">
-                                        <img src="assets/imgs/freelancer/works/startright.jpg" alt="image">
-                                    </div>
-                                </a>
-                                <div class="info">
-                                    <div class="d-flex align-items-center gap-1">
-                                    <h5><a href="https://startrightconsulting.ca/">Start Right Consulting</a></h5>
-                                    <span class="mb-10">
-                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M13.922 4.5V11.8125C13.922 11.9244 13.8776 12.0317 13.7985 12.1108C13.7193 12.1899 13.612 12.2344 13.5002 12.2344C13.3883 12.2344 13.281 12.1899 13.2018 12.1108C13.1227 12.0317 13.0783 11.9244 13.0783 11.8125V5.51953L4.79547 13.7953C4.71715 13.8736 4.61092 13.9176 4.50015 13.9176C4.38939 13.9176 4.28316 13.8736 4.20484 13.7953C4.12652 13.717 4.08252 13.6108 4.08252 13.5C4.08252 13.3892 4.12652 13.283 4.20484 13.2047L12.4806 4.92188H6.18765C6.07577 4.92188 5.96846 4.87743 5.88934 4.79831C5.81023 4.71919 5.76578 4.61189 5.76578 4.5C5.76578 4.38811 5.81023 4.28081 5.88934 4.20169C5.96846 4.12257 6.07577 4.07813 6.18765 4.07812H13.5002C13.612 4.07813 13.7193 4.12257 13.7985 4.20169C13.8776 4.28081 13.922 4.38811 13.922 4.5Z" fill="currentColor"></path>
-                                        </svg>
-                                    </span>
-                                </div>
-                                    <h6 class="sub-title tag"><a href="https://startrightconsulting.ca/">Business Consulting</a></h6>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 items app info-overlay mb-40">
-                            <div class="item-img o-hidden">
-                                <a href="https://purclean.ca/" class="imago wow">
-                                    <div class="inner wow">
-                                        <img src="assets/imgs/freelancer/works/PURCLEAN.jpg" alt="image">
-                                    </div>
-                                </a>
-                                <div class="info">
-                                    <div class="d-flex align-items-center gap-1">
-                                    <h5><a href="https://purclean.ca/">PURClean</a></h5>
-                                    <span class="mb-10">
-                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M13.922 4.5V11.8125C13.922 11.9244 13.8776 12.0317 13.7985 12.1108C13.7193 12.1899 13.612 12.2344 13.5002 12.2344C13.3883 12.2344 13.281 12.1899 13.2018 12.1108C13.1227 12.0317 13.0783 11.9244 13.0783 11.8125V5.51953L4.79547 13.7953C4.71715 13.8736 4.61092 13.9176 4.50015 13.9176C4.38939 13.9176 4.28316 13.8736 4.20484 13.7953C4.12652 13.717 4.08252 13.6108 4.08252 13.5C4.08252 13.3892 4.12652 13.283 4.20484 13.2047L12.4806 4.92188H6.18765C6.07577 4.92188 5.96846 4.87743 5.88934 4.79831C5.81023 4.71919 5.76578 4.61189 5.76578 4.5C5.76578 4.38811 5.81023 4.28081 5.88934 4.20169C5.96846 4.12257 6.07577 4.07813 6.18765 4.07812H13.5002C13.612 4.07813 13.7193 4.12257 13.7985 4.20169C13.8776 4.28081 13.922 4.38811 13.922 4.5Z" fill="currentColor"></path>
-                                        </svg>
-                                    </span>
-                                </div>
-                                    <h6 class="sub-title tag"><a href="https://purclean.ca/">Cleaning Service</a></h6>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 items app info-overlay mb-40">
-                            <div class="item-img o-hidden">
-                                <a href="#" class="imago wow">
-                                    <div class="inner wow">
-                                        <img src="assets/imgs/freelancer/works/Cleanfreaks.jpg" alt="image">
-                                    </div>
-                                </a>
-                                <div class="info">
-                                    <div class="d-flex align-items-center gap-1">
-                                    <h5><a href="#">Clean Freaks</a></h5>
-                                    <span class="mb-10">
-                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M13.922 4.5V11.8125C13.922 11.9244 13.8776 12.0317 13.7985 12.1108C13.7193 12.1899 13.612 12.2344 13.5002 12.2344C13.3883 12.2344 13.281 12.1899 13.2018 12.1108C13.1227 12.0317 13.0783 11.9244 13.0783 11.8125V5.51953L4.79547 13.7953C4.71715 13.8736 4.61092 13.9176 4.50015 13.9176C4.38939 13.9176 4.28316 13.8736 4.20484 13.7953C4.12652 13.717 4.08252 13.6108 4.08252 13.5C4.08252 13.3892 4.12652 13.283 4.20484 13.2047L12.4806 4.92188H6.18765C6.07577 4.92188 5.96846 4.87743 5.88934 4.79831C5.81023 4.71919 5.76578 4.61189 5.76578 4.5C5.76578 4.38811 5.81023 4.28081 5.88934 4.20169C5.96846 4.12257 6.07577 4.07813 6.18765 4.07812H13.5002C13.612 4.07813 13.7193 4.12257 13.7985 4.20169C13.8776 4.28081 13.922 4.38811 13.922 4.5Z" fill="currentColor"></path>
-                                        </svg>
-                                    </span>
-                                </div>
-                                    <h6 class="sub-title tag"><a href="#">Cleaning Service</a></h6>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 items app info-overlay mb-40">
-                            <div class="item-img o-hidden">
-                                <a href="https://maijlacleaningangels.com/" class="imago wow">
-                                    <div class="inner wow">
-                                        <img src="assets/imgs/freelancer/works/maijla.jpg" alt="image">
-                                    </div>
-                                </a>
-                                <div class="info">
-                                    <div class="d-flex align-items-center gap-1">
-                                    <h5><a href="https://maijlacleaningangels.com/">Maijla</a></h5>
-                                    <span class="mb-10">
-                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M13.922 4.5V11.8125C13.922 11.9244 13.8776 12.0317 13.7985 12.1108C13.7193 12.1899 13.612 12.2344 13.5002 12.2344C13.3883 12.2344 13.281 12.1899 13.2018 12.1108C13.1227 12.0317 13.0783 11.9244 13.0783 11.8125V5.51953L4.79547 13.7953C4.71715 13.8736 4.61092 13.9176 4.50015 13.9176C4.38939 13.9176 4.28316 13.8736 4.20484 13.7953C4.12652 13.717 4.08252 13.6108 4.08252 13.5C4.08252 13.3892 4.12652 13.283 4.20484 13.2047L12.4806 4.92188H6.18765C6.07577 4.92188 5.96846 4.87743 5.88934 4.79831C5.81023 4.71919 5.76578 4.61189 5.76578 4.5C5.76578 4.38811 5.81023 4.28081 5.88934 4.20169C5.96846 4.12257 6.07577 4.07813 6.18765 4.07812H13.5002C13.612 4.07813 13.7193 4.12257 13.7985 4.20169C13.8776 4.28081 13.922 4.38811 13.922 4.5Z" fill="currentColor"></path>
-                                        </svg>
-                                    </span>
-                                </div>
-                                    <h6 class="sub-title tag"><a href="https://maijlacleaningangels.com/">Cleaning Service</a></h6>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 items app info-overlay mb-40">
-                            <div class="item-img o-hidden">
-                                <a href="https://theshutters.ca/" class="imago wow">
-                                    <div class="inner wow">
-                                        <img src="assets/imgs/freelancer/works/shutter.png.jpg" alt="image">
-                                    </div>
-                                </a>
-                                <div class="info">
-                                    <div class="d-flex align-items-center gap-1">
-                                    <h5><a href="https://theshutters.ca/">Shutter</a></h5>
-                                    <span class="mb-10">
-                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M13.922 4.5V11.8125C13.922 11.9244 13.8776 12.0317 13.7985 12.1108C13.7193 12.1899 13.612 12.2344 13.5002 12.2344C13.3883 12.2344 13.281 12.1899 13.2018 12.1108C13.1227 12.0317 13.0783 11.9244 13.0783 11.8125V5.51953L4.79547 13.7953C4.71715 13.8736 4.61092 13.9176 4.50015 13.9176C4.38939 13.9176 4.28316 13.8736 4.20484 13.7953C4.12652 13.717 4.08252 13.6108 4.08252 13.5C4.08252 13.3892 4.12652 13.283 4.20484 13.2047L12.4806 4.92188H6.18765C6.07577 4.92188 5.96846 4.87743 5.88934 4.79831C5.81023 4.71919 5.76578 4.61189 5.76578 4.5C5.76578 4.38811 5.81023 4.28081 5.88934 4.20169C5.96846 4.12257 6.07577 4.07813 6.18765 4.07812H13.5002C13.612 4.07813 13.7193 4.12257 13.7985 4.20169C13.8776 4.28081 13.922 4.38811 13.922 4.5Z" fill="currentColor"></path>
-                                        </svg>
-                                    </span>
-                                </div>
-                                    <h6 class="sub-title tag"><a href="https://theshutters.ca/">Home Decor</a></h6>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- <div class="col-md-4 items app info-overlay mb-40">
-                            <div class="item-img o-hidden">
-                                <a href="" class="imago wow">
-                                    <div class="inner wow">
-                                        <img src="assets/imgs/freelancer/works/gulf-pack.jpg" alt="image">
-                                    </div>
-                                </a>
-                                <div class="info">
-                                    <div class="d-flex align-items-center gap-1">
-                                    <h5><a href="">Gulfpack</a></h5>
-                                    <span class="mb-10">
-                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M13.922 4.5V11.8125C13.922 11.9244 13.8776 12.0317 13.7985 12.1108C13.7193 12.1899 13.612 12.2344 13.5002 12.2344C13.3883 12.2344 13.281 12.1899 13.2018 12.1108C13.1227 12.0317 13.0783 11.9244 13.0783 11.8125V5.51953L4.79547 13.7953C4.71715 13.8736 4.61092 13.9176 4.50015 13.9176C4.38939 13.9176 4.28316 13.8736 4.20484 13.7953C4.12652 13.717 4.08252 13.6108 4.08252 13.5C4.08252 13.3892 4.12652 13.283 4.20484 13.2047L12.4806 4.92188H6.18765C6.07577 4.92188 5.96846 4.87743 5.88934 4.79831C5.81023 4.71919 5.76578 4.61189 5.76578 4.5C5.76578 4.38811 5.81023 4.28081 5.88934 4.20169C5.96846 4.12257 6.07577 4.07813 6.18765 4.07812H13.5002C13.612 4.07813 13.7193 4.12257 13.7985 4.20169C13.8776 4.28081 13.922 4.38811 13.922 4.5Z" fill="currentColor"></path>
-                                        </svg>
-                                    </span>
-                                </div>
-                                    <h6 class="sub-title tag"><a href="">Packing Solution</a></h6>
-                                </div>
-                            </div>
-                        </div> -->
+                     
 
 
                     </div>
@@ -495,147 +75,9 @@
 
         <!-- ==================== End Portfolio ==================== -->
 
-            <!-- ==================== Start Contact ==================== -->
-
-            <section class="contact-crev section-padding" >
-                <!-- <div class="contact-container"> -->
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-5">
-                                <div class="sec-lg-head md-mb80">
-                                    <h6 class="dot-titl-non mb-10 wow fadeIn">Get In Touch</h6>
-                                    <h2 class="fz-50 d-rotate wow">
-                                        <span class="rotate-text">Let's make your brand brilliant!</span>
-                                    </h2>
-                                    <p class="fz-15 mt-10 wow fadeIn">If you would like to work with us or just want to get in
-                                        touch, we’d love to hear from you!</p>
-                                    <!-- <div class="phone fz-30 fw-600 mt-30 underline wow fadeIn">
-                                        <a href="#0">+1 840 841 25 69</a>
-                                    </div> -->
-                                    <ul class="rest social-text d-flex mt-60">
-                                        <li class="mr-30">
-                                            <a href="#0" class="hover-this"><span class="hover-anim">Behance</span></a>
-                                        </li>
-                                        <li class="mr-30">
-                                            <a href="#0" class="hover-this"><span class="hover-anim">Dribbble</span></a>
-                                        </li>
-                                        <li class="mr-30">
-                                            <a href="#0" class="hover-this"><span class="hover-anim">LinkedIn</span></a>
-                                        </li>
-                                        <li>
-                                            <a href="#0" class="hover-this"><span
-                                                    class="hover-anim">Instagram</span></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 offset-lg-1 valign">
-                                <div class="full-width">
-                                    <form id="contact-form" method="post" action="contact.php">
-
-                                        <div class="messages"></div>
-
-                                        <div class="controls row">
-
-                                            <div class="col-lg-6">
-                                                <div class="form-group mb-30">
-                                                    <input id="form_name" type="text" name="name" placeholder="Name"
-                                                        required="required">
-                                                </div>
-                                            </div>
-
-                                            <div class="col-lg-6">
-                                                <div class="form-group mb-30">
-                                                    <input id="form_email" type="email" name="email" placeholder="Email"
-                                                        required="required">
-                                                </div>
-                                            </div>
-
-                                            <div class="col-12">
-                                                <div class="form-group mb-30">
-                                                    <input id="form_subject" type="text" name="subject"
-                                                        placeholder="Subject">
-                                                </div>
-                                            </div>
-
-                                            <div class="col-12">
-                                                <div class="form-group">
-                                                    <textarea id="form_message" name="message" placeholder="Message"
-                                                        rows="4" required="required"></textarea>
-                                                </div>
-                                                <div class="mt-30">
-                                                    <button type="submit" class="butn butn-full butn-bord radius-30">
-                                                        <span class="text">Let's Talk</span>
-                                                    </button>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                <!-- </div> -->
-            </section>
-
-            <!-- ==================== End Contact ==================== -->
 
 
             </main>
 
 
-
-            <!-- ==================== Start Footer ==================== -->
-
-            <footer class="sub-bg">
-                <div class="sub-footer pt-40 pb-40 bord-thin-top">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <p class="fz-13">©2023 Sajin Prakash, All Rights Reserved</p>
-                                <!-- <div class="logo">
-                                    <a href="#0">
-                                        <img src="assets/imgs/freelancer/SAJIN.jpg" alt="">
-                                    </a>
-                                </div> -->
-                            </div>
-                            <div class="col-lg-8">
-                                <div class="copyright d-flex">
-                                    <div class="ml-auto">
-                                        <!-- <p class="fz-13">©2023 Sajin Prakash, All Rights Reserved</p> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-
-            <!-- ==================== End Footer ==================== -->
-
-
-
-
-
-
-
-
-
-
-
-    <!-- jQuery -->
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/jquery-migrate-3.4.0.min.js"></script>
-
-    <!-- plugins -->
-    <script src="assets/js/plugins.js"></script>
-
-    <script src="assets/js/ScrollTrigger.min.js"></script>
-
-    <!-- custom scripts -->
-    <script src="assets/js/scripts.js"></script>
-
-</body>
-
-</html>
+{% include "common/footer.html" %}

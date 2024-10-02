@@ -28,3 +28,8 @@ def contact(request):
         print(f"Error: {e}")
 
     return JsonResponse(data)
+
+def works(request):
+    works = Works.objects.all()
+    print(works)
+    return render(request, 'work.html',locals())
