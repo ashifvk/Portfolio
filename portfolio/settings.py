@@ -81,7 +81,7 @@ DATABASES = {
     }
 }
 
-DATABASES['default'] = dj_database_url.parse("postgresql://portfolio_ashif_user:R7zZebat2lKWdaJT2QBwaNvxRBEdRo6a@dpg-crun27rtq21c73a2lrb0-a.oregon-postgres.render.com/portfolio_ashif")
+# DATABASES['default'] = dj_database_url.parse("postgresql://portfolio_ashif_user:R7zZebat2lKWdaJT2QBwaNvxRBEdRo6a@dpg-crun27rtq21c73a2lrb0-a.oregon-postgres.render.com/portfolio_ashif")
 
 
 # Password validation
