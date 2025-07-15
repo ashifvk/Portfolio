@@ -3,11 +3,28 @@ from .models import *
 from django.http import HttpResponse
 from django.http import JsonResponse
 import json
+
+
+def get_client_ip(request):
+    x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
+    if x_forwarded_for:
+        ip = x_forwarded_for.split(',')[0]
+    else:
+        ip = request.META.get('REMOTE_ADDR')
+    return ip
+
 def home(request):
+    ip = get_client_ip(request)
+    user_agent = request.META.get('HTTP_USER_AGENT', 'unknown')
+    referer = request.META.get('HTTP_REFERER', 'Direct')
+    VisitorLog.objects.create(
+        ip_address=ip,
+        user_agent=user_agent,
+        referer=referer
+    )
     works = Works.objects.all()
     HW=Works.objects.filter(Type='Horizontal')[:2]
     VW=Works.objects.filter(Type='Vertical')[:3]
-    print(HW)
     return render(request, 'index.html',locals())
 
 def contact(request):

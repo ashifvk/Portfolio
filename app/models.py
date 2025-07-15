@@ -21,5 +21,13 @@ class Contact(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     def __str__(self):
         return self.name
-    
-    
+
+
+class VisitorLog(models.Model):
+    ip_address = models.GenericIPAddressField()
+    user_agent = models.CharField(max_length=255)
+    referer = models.TextField(blank=True, null=True)
+    visited_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"Visitor {self.ip_address} at {self.visited_at}"

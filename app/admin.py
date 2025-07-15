@@ -17,3 +17,11 @@ class workadmin(admin.ModelAdmin):
     image_preview.short_description = 'Image'
 admin.site.register(Works,workadmin)
 admin.site.register(Contact)
+
+
+class VisitorLogAdmin(admin.ModelAdmin):
+    list_display = ('ip_address', 'user_agent', 'referer', 'visited_at')
+    search_fields = ('ip_address', 'user_agent')
+
+
+admin.site.register(VisitorLog, VisitorLogAdmin)
